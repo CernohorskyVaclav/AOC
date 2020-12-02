@@ -15,18 +15,32 @@ class FTE {
         }
         int num1;
         int num2;
+        int num3;
         boolean is2020 = false;
         for(int i = 0; i < input.length; i++) {
             if(is2020) break;
             for(int j = 0; j < input.length; j++) {
-                num1 = input[i];
-                num2 = input[j];
-                if(num1 + num2 == 2020) {
-                    System.out.println(num1 * num2);
-                    is2020 = true;
-                    break;
+                if(is2020) break;
+                for(int q = 0; q < input.length; q++) {
+                    num1 = input[i];
+                    num2 = input[j];
+                    num3 = input[q];
+                    if(num1 + num2 + num3 == 2020) {
+                        System.out.println(num1 * num2 * num3);
+                        is2020 = true;
+                        break;
+                    }
                 }
             }
         }
     }
 }
+/*
+num1 = input[i];
+num2 = input[j];
+if(num1 + num2 == 2020) {
+    System.out.println(num1 * num2);
+    is2020 = true;
+    break;
+}
+*/
