@@ -35,12 +35,3 @@ class FTE {
         }
     }
 }
-/*
-num1 = input[i];
-num2 = input[j];
-if(num1 + num2 == 2020) {
-    System.out.println(num1 * num2);
-    is2020 = true;
-    break;
-}
-*/
